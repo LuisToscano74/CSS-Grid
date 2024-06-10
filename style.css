@@ -12,16 +12,14 @@ body {
   background-color: lightskyblue;
 }
 
-.container {
-  display: grid; /* Esto habilita el comportamiento de grid en el contenedor */
-
-  grid-template-columns: 100px 200px 150px; /* Esto define el ancho de las columnas */
-
-  grid-template-rows: 100px 200px 50px; /*  */
-
+/* Container tenga una grilla de 5 columnas * 5 filas del mismo ancho y alto. */
+.container { 
+  display: grid; 
+  grid-template-columns: repeat(12, 1fr); 
+  grid-template-rows: repeat(3, 1fr 2fr); 
   width: 500px;
   height: 500px;
-  margin: 0 auto; /* Esto centra el elemento cuando tiene ancho definido */
+  margin: 0 auto; 
   background-color:blueviolet;
 }
 
