@@ -19,6 +19,12 @@ body {
   gap: 24px; /* Define el espacio entre filas y columnas */
   /*row-gap: 50px; Espacio entre líneas  */
   /*column-gap: 10px; Espacio entre columnas */
+
+  grid-auto-flow: row; /* Es el valor por Default */
+  /*grid-auto-flow: column; Este valor cambia el flujo a columnas */
+
+  /* Esto no es de grid */
+  direction: rtl; /* Right to Left */
                         
   width: 500px;
   height: 500px;
@@ -26,24 +32,34 @@ body {
   background-color:blueviolet;
 }
 
-.header {
+.item-1 {
   background-color: lightcoral;
 }
 
-.main {
+.item-2 {
   background-color: lightgreen;
 }
 
-.sidebar {
-  background-color: lightgoldenrodyellow;
+.item-3 {
+  background-color: yellow;
 }
 
-.footer {
-  background-color: lightskyblue;
+.item-4 {
+  background-color: aqua;
 }
 
-.deep {
+.item-5 {
   background-color: violet;
+}
+
+.container div{
+  font-size: 32px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: purple;
 }
 
 /* Coloquen 5 items con colores de fondo diferentes */
