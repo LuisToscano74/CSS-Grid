@@ -14,14 +14,12 @@ body {
 
 .container { 
   display: grid; 
-  grid-template-columns: 100px 100px 100px;
-  grid-template-rows: repeat(3, 100px); 
-  grid-template-areas: 
-          "header header header"
-   "main   main  sidebar"
-  "footer  footer  footer";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr); 
+  gap: 24px; /* Define el espacio entre filas y columnas */
+  /*row-gap: 50px; Espacio entre líneas  */
+  /*column-gap: 10px; Espacio entre columnas */
                         
-
   width: 500px;
   height: 500px;
   margin: 0 auto; 
@@ -29,21 +27,23 @@ body {
 }
 
 .header {
-  background-color: lightseagreen;
-  grid-area: header;
+  background-color: lightcoral;
 }
 
 .main {
-  background-color: orchid;
-  grid-area: main;
+  background-color: lightgreen;
 }
 
 .sidebar {
-  grid-area: sidebar;
-  background-color:lightgoldenrodyellow;
+  background-color: lightgoldenrodyellow;
 }
 
 .footer {
-  background-color: lightpink;
-  grid-area: footer;
+  background-color: lightskyblue;
 }
+
+.deep {
+  background-color: violet;
+}
+
+/* Coloquen 5 items con colores de fondo diferentes */
